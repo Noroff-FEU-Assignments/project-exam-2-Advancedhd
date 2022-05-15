@@ -6,9 +6,10 @@ import { useRef, useState } from "react";
 import { Baseurl } from "../constants/Api";
 import axios from "axios";
 
+import "react-datepicker/dist/react-datepicker.css";
+
 export default function BookModal({ title, handleClose, show }) {
   const [callback, setCallback] = useState(false);
-
   const [errorsCallback, setErrors] = useState();
 
   const messageRef = useRef(null);
@@ -114,7 +115,7 @@ export default function BookModal({ title, handleClose, show }) {
               <Form.Label>Message</Form.Label>
               <Form.Control
                 type="Message"
-                placeholder="Enter your Message"
+                placeholder="Enter your Message and preferred dates."
                 as="textarea"
                 rows={6}
                 ref={messageRef}

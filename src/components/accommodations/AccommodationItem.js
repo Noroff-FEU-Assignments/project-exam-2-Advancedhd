@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
-
 import PropTypes from "prop-types";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-
-import DeleteAccommodation from "./DeleteAccommodation";
+import AccommodationDelete from "./AccommodationDelete";
 
 function AccommodationItem({ id, title, description, price, picture }) {
   return (
@@ -14,7 +12,7 @@ function AccommodationItem({ id, title, description, price, picture }) {
         <Card.Img variant="top" src={picture} />
         <Card.Body>
           <Card.Title>{title}</Card.Title>
-          <Card.Text>
+          <div>
             <div className="description__container">
               <div className="description__text">{description}</div>
             </div>
@@ -22,8 +20,8 @@ function AccommodationItem({ id, title, description, price, picture }) {
             <Link to={`/detail/${id}`}>
               <Button variant="primary">Read More</Button>
             </Link>
-            <DeleteAccommodation id={id} />
-          </Card.Text>
+            <AccommodationDelete id={id} />
+          </div>
         </Card.Body>
       </Card>
     </Col>

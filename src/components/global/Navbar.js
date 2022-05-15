@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Row from "react-bootstrap/Row";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
-import SearchBar from "../search/SearchBar";
+import SearchBar from "./SearchBar";
 import AuthContext from "../context/Auth";
 
 function Navigationbar() {
@@ -45,7 +45,7 @@ function Navigationbar() {
                   <NavLink className="" to="/Admin">
                     Admin
                   </NavLink>
-                  | <Button onClick={logout}>Log Out</Button>
+                  <Button onClick={logout}>Log Out</Button>
                 </>
               ) : (
                 <NavLink to="/Login">Login</NavLink>

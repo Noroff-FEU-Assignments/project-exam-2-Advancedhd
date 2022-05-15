@@ -13,7 +13,10 @@ img.logo{
 
 .navbar-nav a.active {
     color: #6DB8E0;
-    text-decoration: underline;
+    font-size: 25px;
+    border: #6DB8E0 2px solid;
+    border-radius: 20px;
+    padding: 0px 5px 0px 5px;
 }
 
 .d-flex{
@@ -24,7 +27,11 @@ img.logo{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
 
-
+@media screen and (min-width: 992px ){
+    .navbar-nav .btn{
+        margin-left: 20px;
+    }
+}
 
 @media screen and (max-width: 992px ){
     .navbar-nav a {
@@ -39,6 +46,13 @@ img.logo{
         margin-bottom: 40px;
     }
 
+    .navbar-nav a.active {
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
     img.logo{
         height: 70px !important;
         margin-left: 20px;
@@ -51,6 +65,7 @@ img.logo{
         margin-left: 40px;
         font-size: 20px;
     }
+    
 }
 
 @media screen and (max-width: 1450px ) and (min-width: 992px){

@@ -1,25 +1,21 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 import { useContext } from "react";
-import { useNavigate } from "react-router-dom";
-import { Baseurl } from "../constants/Api";
-import AuthContext from "../context/Auth";
+import { Baseurl } from "../../constants/Api";
+import AuthContext from "../../context/Auth";
 import Button from "react-bootstrap/Button";
 import axios from "axios";
 
-export default function DeleteAccommodation({ id }) {
+export default function EnquiriesDelete({ id }) {
   const [error, setError] = useState(null);
   const [auth, setAuth] = useContext(AuthContext);
 
-  const history = useNavigate();
-
-  const url = Baseurl + `api/accommodations/${id}`;
+  const url = Baseurl + `api/enquiries/${id}`;
 
   async function handleDelete() {
     try {
       await axios.delete(url);
-      history.push("/Admin");
-      window.location.reload();
+      window.location = "/Admin";
     } catch (error) {
       setError(error);
     }
@@ -29,7 +25,7 @@ export default function DeleteAccommodation({ id }) {
     <>
       {auth ? (
         <>
-          <Button className="delete__button" onClick={handleDelete}>
+          <Button className="delete__enquiries__button" onClick={handleDelete}>
             Delete
           </Button>
         </>
@@ -40,6 +36,6 @@ export default function DeleteAccommodation({ id }) {
   );
 }
 
-DeleteAccommodation.propTypes = {
+EnquiriesDelete.propTypes = {
   id: PropTypes.number.isRequired,
 };

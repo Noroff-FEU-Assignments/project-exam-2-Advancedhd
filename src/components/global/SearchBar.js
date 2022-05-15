@@ -32,10 +32,6 @@ function SearchBar() {
     });
   }, []);
 
-  const handleOnSearch = (string, results) => {};
-
-  const handleOnHover = (result) => {};
-
   const handleOnSelect = (item) => {
     document.location = `/detail/${item.id}`;
   };
@@ -58,8 +54,6 @@ function SearchBar() {
       <div className="search__bar">
         <ReactSearchAutocomplete
           items={items}
-          onSearch={handleOnSearch}
-          onHover={handleOnHover}
           onSelect={handleOnSelect}
           onFocus={handleOnFocus}
           autoFocus

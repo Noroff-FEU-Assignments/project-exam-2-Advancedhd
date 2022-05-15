@@ -7,7 +7,7 @@ import { Baseurl } from "../constants/Api";
 import AccommodationItem from "./AccommodationItem";
 import Heading from "../layout/Heading";
 
-function AccommondationGet() {
+function AccommondationGetAll() {
   const [accommodations, setAccommodations] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -19,8 +19,7 @@ function AccommondationGet() {
 
         if (response.ok) {
           const json = await response.json();
-          console.log(json.data);
-          setAccommodations(json.data.slice(0, 3));
+          setAccommodations(json.data);
         } else {
           setError("A server error occured");
         }
@@ -55,7 +54,7 @@ function AccommondationGet() {
                 title={attributes.title}
                 description={attributes.description}
                 price={attributes.price}
-                picture={attributes.picture.data.attributes.url}
+                picture={attributes?.picture?.data?.attributes?.url}
               />
             );
           })}
@@ -65,4 +64,4 @@ function AccommondationGet() {
   );
 }
 
-export default AccommondationGet;
+export default AccommondationGetAll;

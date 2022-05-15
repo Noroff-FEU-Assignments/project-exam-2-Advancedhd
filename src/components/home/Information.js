@@ -2,11 +2,13 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
 import Container from "react-bootstrap/Container";
+import Heading from "../layout/Heading";
 
 function Information() {
   return (
     <>
       <Container className="desktop__information">
+        <Heading content="" />
         <Row>
           <Col>
             <div className="desktop__information__text__container">
@@ -34,6 +36,7 @@ function Information() {
       </Container>
 
       <Container className="mobile__information">
+        <Heading content="" />
         <Row>
           <Col>
             <div className="mobile__information__text__container">

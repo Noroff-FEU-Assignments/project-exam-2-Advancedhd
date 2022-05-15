@@ -3,10 +3,10 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Spinner from "react-bootstrap/Spinner";
 import Alert from "react-bootstrap/Alert";
-import { Baseurl } from "../constants/Api";
+import { Baseurl } from "../../constants/Api";
 import CommentsItem from "./CommentsItem";
-import Heading from "../layout/Heading";
-import AuthContext from "../context/Auth";
+import Heading from "../../layout/Heading";
+import AuthContext from "../../context/Auth";
 
 function CommentsGet() {
   const [comments, setComments] = useState([]);
@@ -24,7 +24,6 @@ function CommentsGet() {
 
         if (response.ok) {
           const json = await response.json();
-          console.log(json.data);
           setComments(json.data);
         } else {
           setError("A server error occured");

@@ -1,21 +1,23 @@
 import PropTypes from "prop-types";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
+import DeleteComment from "./CommentDelete";
 
-function EnquiriesItem({ name, email, message }) {
+function EnquiriesItem({ id, name, email, message }) {
   return (
     <Col>
       <Card>
         <Card.Body>
           <Card.Title>Message from {name}</Card.Title>
-          <Card.Text>
-            <h5 className="enquirie__name">Name:</h5>
+          <div>
+            <h5 className="name">Name:</h5>
             <p>{name}</p>
-            <h5 className="enquirie__message">Message:</h5>
+            <h5 className="message">Message:</h5>
             <p>{message}</p>
-            <h5 className="enquirie__email">Email</h5>
+            <h5 className="email">Email</h5>
             <p>{email}</p>
-          </Card.Text>
+            <DeleteComment id={id} />
+          </div>
         </Card.Body>
       </Card>
     </Col>
@@ -23,6 +25,7 @@ function EnquiriesItem({ name, email, message }) {
 }
 
 EnquiriesItem.propTypes = {
+  id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,
   message: PropTypes.string.isRequired,

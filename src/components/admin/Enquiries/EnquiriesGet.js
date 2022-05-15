@@ -1,26 +1,30 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Spinner from "react-bootstrap/Spinner";
 import Alert from "react-bootstrap/Alert";
-import { Baseurl } from "../constants/Api";
-import AccommodationItem from "./AccommodationItem";
-import Heading from "../layout/Heading";
+import { Baseurl } from "../../constants/Api";
+import EnquiriesItem from "./EnquiriesItem";
+import Heading from "../../layout/Heading";
+import AuthContext from "../../context/Auth";
 
-function AccommondationGetAll() {
-  const [accommodations, setAccommodations] = useState([]);
+function EnquiriesGet() {
+  const [enquiries, setEnquiries] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [auth] = useContext(AuthContext);
+  if (!auth) {
+    window.location = "/";
+  }
 
   useEffect(function () {
     async function fetchData() {
       try {
-        const response = await fetch(Baseurl + "api/Accommodations?populate=*");
+        const response = await fetch(Baseurl + "api/Enquiries");
 
         if (response.ok) {
           const json = await response.json();
-          console.log(json.data);
-          setAccommodations(json.data);
+          setEnquiries(json.data);
         } else {
           setError("A server error occured");
         }
@@ -42,20 +46,20 @@ function AccommondationGetAll() {
   }
 
   return (
-    <div className="accommodation__container">
+    <div className="enquiries__container">
       <Container>
-        <Heading content="Popular Accommodations" />
+        <Heading content="Enquiries" />
         <Row>
-          {accommodations?.map(function (accommodation) {
-            const { id, attributes } = accommodation;
+          {enquiries?.map(function (enquirie) {
+            const { id, attributes } = enquirie;
             return (
-              <AccommodationItem
+              <EnquiriesItem
                 key={id}
                 id={id}
-                title={attributes.title}
-                description={attributes.description}
-                price={attributes.price}
-                picture={attributes?.picture?.data?.attributes?.url}
+                name={attributes.name}
+                email={attributes.email}
+                accommodation={attributes.accommodation}
+                message={attributes.message}
               />
             );
           })}
@@ -65,4 +69,4 @@ function AccommondationGetAll() {
   );
 }
 
-export default AccommondationGetAll;
+export default EnquiriesGet;

@@ -2,9 +2,9 @@ import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { useRef, useState } from "react";
-import { Baseurl } from "../constants/Api";
+import { Baseurl } from "../../constants/Api";
 import axios from "axios";
-import Heading from "../layout/Heading";
+import Heading from "../../layout/Heading";
 
 export default function AccommodationPost() {
   const [callback, setCallback] = useState(false);
