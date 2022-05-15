@@ -1,0 +1,42 @@
+.desktop__information__text__container{
+    margin-top: 40px !important;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 15% 0;
+    text-align: center;
+}
+
+.mobile__information__text__container{
+    margin-top: 40px !important;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 15% 0;
+    text-align: center;
+}
+
+.mobile__information__text__container h3, .mobile__information__text__container p{
+ margin-bottom: 20px;
+}
+
+.information__img {
+    transition: transform .2s;
+}
+
+.information__img:hover{
+    transform: scale(1.040);
+}
+
+
+@media screen and (max-width: 992px ){
+    .desktop__information {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 993px ){
+    .mobile__information {
+        display: none;
+    }
+}
+
+

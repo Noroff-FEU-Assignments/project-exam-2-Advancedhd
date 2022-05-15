@@ -1,0 +1,61 @@
+.details__container .heading{
+    color: white;
+}
+
+.details__container {
+    height: auto;
+    background-color: black;
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+}
+
+.details__container h1, .details__container p{
+ color: white
+}
+
+
+.details__container p {
+    margin-top: 37px;
+}
+
+.details__container img {
+max-width: 100%;
+}
+
+.desktop__details img{
+    padding-right: 30px;
+}
+
+
+.details__container .btn {
+    font-size: 20px;
+    margin-top: 37px;
+}
+
+
+@media screen and (max-width: 992px ){
+    .details__container .btn {
+        margin: 0 auto;
+    }
+
+    .desktop__details{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 993px ){
+    .mobile__details {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px ) and (min-width: 992px){
+    .details__container .btn {
+        margin-top: 10px;
+    }
+
+    .details__container p {
+        margin-top: 10px;
+    }
+}

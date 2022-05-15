@@ -1,0 +1,29 @@
+.accommodation__search__bar {
+    z-index: 1;
+}
+
+.sc-hKMtZM{
+    border: none
+}
+
+
+.search__bar{
+    width: 250px;
+    margin-right: 1rem;
+}
+
+
+@media screen and (max-width: 992px ){
+    .search__bar{
+        width: 200px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width: 1450px ) and (min-width: 992px){
+    .search__bar{
+        width: 170px;
+    }
+}

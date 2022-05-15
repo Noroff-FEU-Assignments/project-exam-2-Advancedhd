@@ -1,0 +1,18 @@
+.enquirie__message, .enquirie__name, .enquirie__email {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+
+.enquiries__container, .comments__container, .accommodationpost__container, .commentspost__container{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+}
+
+
+.accommodationpost__form .form-label, .commentspost__container .form-label{
+    color: white;
+}

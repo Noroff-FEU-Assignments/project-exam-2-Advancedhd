@@ -1,0 +1,69 @@
+img.logo{
+    height: 100px !important;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.navbar-nav a {
+    margin-left: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: White;
+}
+
+.navbar-nav a.active {
+    color: #6DB8E0;
+    text-decoration: underline;
+}
+
+.d-flex{
+ float: right;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+
+
+@media screen and (max-width: 992px ){
+    .navbar-nav a {
+        text-align: center;
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
+
+    .navbar-nav .btn {
+        width: 100px !important;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    img.logo{
+        height: 70px !important;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1450px) and (min-width: 1070px) {
+    .navbar-nav a {
+        margin-left: 40px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1450px ) and (min-width: 992px){
+    .navbar-nav a {
+        margin-left: 20px;
+        font-size: 20px;
+    }
+
+    img.logo{
+        height: 70px !important;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+

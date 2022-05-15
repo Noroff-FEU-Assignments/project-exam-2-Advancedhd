@@ -1,0 +1,38 @@
+.hero__banner__img{
+    height: 35rem !important;
+    object-fit: cover;
+    transition: transform .2s;
+    margin: 0 auto;
+}
+
+.hero__banner__img:hover{
+    transform: scale(1.020);
+}
+
+.carousel-control-prev, .carousel-control-next, .carousel-indicators {
+    display: none;
+}
+
+
+.carousel-caption{
+    color: white;
+    background-color: black;
+    width: 400px;
+    height: 120px;
+    margin: 0 auto;
+    padding-top: 40px;
+    border-radius: 80px 80px 0px 0px;
+    margin-bottom: -20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+@media screen and (max-width: 650px ){
+    .hero__banner__img {
+        height: 25rem !important;
+    }
+
+    .carousel-caption {
+        width: 340px;
+    }
+}

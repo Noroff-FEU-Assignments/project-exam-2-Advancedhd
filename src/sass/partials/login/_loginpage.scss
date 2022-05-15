@@ -1,0 +1,24 @@
+.login__background{
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    padding-top: 100px;
+}
+
+
+
+.login__background .container{
+    background-color: whitesmoke;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    
+}
+
+.login__background .container .heading{
+    color: black;
+}
+
+.error{
+    color: red;
+}
