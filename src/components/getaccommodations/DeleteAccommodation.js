@@ -11,15 +11,14 @@ export default function DeleteAccommodation({ id }) {
   const [error, setError] = useState(null);
   const [auth, setAuth] = useContext(AuthContext);
 
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   const url = Baseurl + `api/accommodations/${id}`;
 
   async function handleDelete() {
     try {
       await axios.delete(url);
-      history.push("/Admin");
-      window.location.reload();
+      navigate("/Accommodation");
     } catch (error) {
       setError(error);
     }
