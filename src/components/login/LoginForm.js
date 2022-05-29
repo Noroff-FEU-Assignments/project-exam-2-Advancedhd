@@ -55,10 +55,10 @@ export default function LoginForm() {
             controlId="formBasicIdentifier"
             disabled={submitting}
           >
-            <Form.Label>Username/email</Form.Label>
+            <Form.Label>Email</Form.Label>
             <Form.Control
               type="identifier"
-              placeholder="Username"
+              placeholder="Email"
               {...register("identifier")}
             />
             {errors?.identifier && <Error>{errors.identifier.message}</Error>}
