@@ -1,10 +1,14 @@
+.accommodation__title::placeholder{
+    color: black !important;
+}
+
 .message, .name, .email {
     margin-top: 30px;
     font-weight: bold;
 }
 
 
-.enquiries__container, .comments__container, .accommodationpost__container, .commentspost__container{
+.enquiries__container, .comments__container, .accommodationpost__container, .commentspost__container, .modal-body{
     width: 100%;
     height: auto;
     background-color: black;
@@ -13,6 +17,6 @@
 }
 
 
-.accommodationpost__form .form-label, .commentspost__container .form-label{
+.accommodationpost__form .form-label, .commentspost__container .form-label, .modal-body .form-label, .login__background .form-label{
     color: white;
 }

@@ -7,8 +7,8 @@ import Button from "react-bootstrap/Button";
 import axios from "axios";
 
 export default function EnquiriesDelete({ id }) {
-  const [error, setError] = useState(null);
-  const [auth, setAuth] = useContext(AuthContext);
+  const [, setError] = useState(null);
+  const [auth] = useContext(AuthContext);
 
   const url = Baseurl + `api/enquiries/${id}`;
 
@@ -25,7 +25,7 @@ export default function EnquiriesDelete({ id }) {
     <>
       {auth ? (
         <>
-          <Button className="delete__enquiries__button" onClick={handleDelete}>
+          <Button className="delete__button" onClick={handleDelete}>
             Delete
           </Button>
         </>

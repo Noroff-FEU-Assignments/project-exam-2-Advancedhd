@@ -7,8 +7,8 @@ import Button from "react-bootstrap/Button";
 import axios from "axios";
 
 export default function AccommodationDelete({ id }) {
-  const [error, setError] = useState(null);
-  const [auth, setAuth] = useContext(AuthContext);
+  const [, setError] = useState(null);
+  const [auth] = useContext(AuthContext);
 
   const url = Baseurl + `api/accommodations/${id}`;
 

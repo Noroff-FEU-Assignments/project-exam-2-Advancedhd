@@ -106,7 +106,12 @@ export default function BookModal({ title, handleClose, show }) {
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicAccommodation">
               <Form.Label>Accommodation</Form.Label>
-              <Form.Control type="accommodation" placeholder={title} disabled />
+              <Form.Control
+                className="accommodation__title"
+                type="accommodation"
+                placeholder={title}
+                disabled
+              />
             </Form.Group>
             <Form.Group
               className="mb-3"

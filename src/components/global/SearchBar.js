@@ -50,9 +50,10 @@ function SearchBar() {
   };
 
   return (
-    <header className="accommodation__search__bar">
+    <header className="accommodation__search__bar" placeholder="Search">
       <div className="search__bar">
         <ReactSearchAutocomplete
+          placeholder="Search"
           items={items}
           onSelect={handleOnSelect}
           onFocus={handleOnFocus}

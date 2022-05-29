@@ -14,9 +14,43 @@
     padding-bottom: 20px;
 }
 
+p, .description__text {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, .card-title{
+    font-family: 'Roboto Serif', serif !important;
+}
+
 
 .delete__button{
     background-color: red !important;
     color: white !important;
     font-size: 13px !important;
+}
+
+
+.form-control{
+    border: #dedede 2px solid;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.form .btn{
+    color: black !important;
+    background-color: white !important;
+    border-radius: 10px !important;
+}
+
+
+.form-control::-webkit-file-upload-button{
+    background-color: white;
+    color: black;
+}
+
+
+.form-control::placeholder{
+    color: white;
+    opacity: 0.8;
 }

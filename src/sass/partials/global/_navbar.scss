@@ -1,26 +1,30 @@
 img.logo{
     height: 100px !important;
     margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 80px;
 }
 
 .navbar-nav a {
     margin-left: 50px;
-    font-size: 20px;
+    font-size: 22px;
     text-decoration: none;
     color: White;
+    font-family: 'Roboto Serif', serif;
 }
 
 .navbar-nav a.active {
     color: #6DB8E0;
-    font-size: 25px;
-    border: #6DB8E0 2px solid;
-    border-radius: 20px;
     padding: 0px 5px 0px 5px;
 }
 
 .d-flex{
  float: right;
+}
+
+.navbar-nav .btn {
+    background-color: black;
+    border: red 2px solid;
+    color: red;
 }
 
 .navbar-toggler-icon {
@@ -29,7 +33,7 @@ img.logo{
 
 @media screen and (min-width: 992px ){
     .navbar-nav .btn{
-        margin-left: 20px;
+        margin-left: 50px;
     }
 }
 
@@ -46,13 +50,6 @@ img.logo{
         margin-bottom: 40px;
     }
 
-    .navbar-nav a.active {
-        width: 200px;
-        margin: 0 auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
     img.logo{
         height: 70px !important;
         margin-left: 20px;
@@ -65,10 +62,12 @@ img.logo{
         margin-left: 40px;
         font-size: 20px;
     }
+
+    
     
 }
 
-@media screen and (max-width: 1450px ) and (min-width: 992px){
+@media screen and (max-width: 1450px ) and (min-width: 991px){
     .navbar-nav a {
         margin-left: 20px;
         font-size: 20px;
@@ -78,6 +77,10 @@ img.logo{
         height: 70px !important;
         margin-left: 20px;
         margin-right: 20px;
+    }
+
+    .navbar-nav .btn {
+        margin-left: 20px;
     }
 }
 

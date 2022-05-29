@@ -35,20 +35,20 @@ function Navigationbar() {
               <NavLink className="" to="/">
                 Home
               </NavLink>
-              <NavLink className="" to="/Contact">
+              <NavLink className="" to="/contact">
                 Contact
               </NavLink>
 
-              <NavLink to="/Accommodation">Accommodation</NavLink>
+              <NavLink to="/accommodation">Accommodation</NavLink>
               {auth ? (
                 <>
-                  <NavLink className="" to="/Admin">
+                  <NavLink className="" to="/admin">
                     Admin
                   </NavLink>
                   <Button onClick={logout}>Log Out</Button>
                 </>
               ) : (
-                <NavLink to="/Login">Login</NavLink>
+                <NavLink to="/login">Login</NavLink>
               )}
             </Nav>
             <SearchBar />

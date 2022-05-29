@@ -5,19 +5,16 @@
 @use "./partials/global/globalstyles";
 @use "./partials/global/navbar";
 @use "./partials/global/globalcontainer";
+@use "./partials/global/searchbar";
 
 //Home
 @use "./partials/home/herobanner";
 @use "./partials/home/accommodation";
-@use "./partials/home/searchbar";
 @use "./partials/home/information";
 
 //Detail
-
 @use "./partials/details/detailspage";
 @use "./partials/details/booking";
-
-//Contact
 
 //Login
 @use "./partials/login/loginpage";
@@ -25,9 +22,8 @@
 //Admin
 @use "./partials/admin/enquiries";
 
-
-
 html{
  height: 100%;
  background-color: black;
+ max-width: 100% !important;
 }

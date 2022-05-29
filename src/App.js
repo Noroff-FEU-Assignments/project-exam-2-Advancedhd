@@ -31,12 +31,12 @@ function App() {
               </>
             }
           />
-          <Route path="/Login" element={<LoginForm />} />
-          <Route path="/Contact" element={<CommentsPost />} />
-          <Route path="/Accommodation" element={<AccommondationGetAll />} />
+          <Route path="/login" element={<LoginForm />} />
+          <Route path="/contact" element={<CommentsPost />} />
+          <Route path="/accommodation" element={<AccommondationGetAll />} />
           <Route path="/detail/:id" element={<AccommodationsDetail />} />
           <Route
-            path="/Admin"
+            path="/admin"
             exact
             element={
               <>
