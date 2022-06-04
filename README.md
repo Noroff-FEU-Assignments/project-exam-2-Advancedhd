@@ -1,73 +1,62 @@
 EMAIL: Admin2@admin.com
 Password: Admin21234
 
-# Getting Started with Create React App
+# Project Exam 2(Holidaze)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://imgur.com/a/jj0LwA3)
 
-## Available Scripts
+This is made to be a Airbnb / Hotel / Accommodation site with login functions.
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+The project Holidaze is a website that tries to deliver housing to people around a certain area. It has
+some functions. When you first see the page as a client, all you can do is view the different accommodation, send in questions via contact or take use of the the enquiries modal on a certain hotel or other housing, these will be displayed to an admin. If you are an admin you can login and you can Post new accommodations, see comments and enquiries made. Or you can delete certain accommodations if you so wish.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+For the coding of the project i used React with react bootstrap and a bunch of NPM packages to name a few, React router dom, React Search Autocomplete and Axios. For the "backend" i use Strapi as headless CMS, allowing me to store the accommodations, comments or enquiries and then showing them on the pages they need to be shown. And then i just GET/POST/DELETE from the Strapi where i need to.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Strapi as Headless CMS
+- Login functionality
+- Send in Contact/Enquiries
+- GET/POST/DELETE
+- Searchbar
 
-### `npm test`
+## Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [React.js](https://reactjs.org/)
+- [React-Bootstrap](https://react-bootstrap.github.io/)
+- [Bootstrap](https://getbootstrap.com)
+- [Sass](https://sass-lang.com/)
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installing
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repo:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone git@github.com:Noroff-FEU-Assignments/project-exam-2-Advancedhd.git
+```
 
-### `npm run eject`
+2. Install the dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Running
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To run the app, run the following commands:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm run start
+```
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+If you want to contribute, please contact me on discord.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contact
 
-### Code Splitting
+Discord: AdvancedHD#1548
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[My LinkedIn page](https://www.linkedin.com/in/h%C3%A5kon-volden-019054b4/)
