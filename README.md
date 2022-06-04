@@ -3,7 +3,7 @@ Password: Admin21234
 
 # Project Exam 2(Holidaze)
 
-![image](https://imgur.com/a/jj0LwA3)
+![image](https://i.imgur.com/HL6wfPh.png)
 
 This is made to be a Airbnb / Hotel / Accommodation site with login functions.
 
