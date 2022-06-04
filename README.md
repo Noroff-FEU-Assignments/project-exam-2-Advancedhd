@@ -59,4 +59,4 @@ If you want to contribute, please contact me on discord.
 
 Discord: AdvancedHD#1548
 
-[My LinkedIn page](https://www.linkedin.com/in/h%C3%A5kon-volden-019054b4/)
+[My LinkedIn](https://www.linkedin.com/in/h%C3%A5kon-volden-019054b4/)
